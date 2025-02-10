@@ -4,6 +4,7 @@ import { PurpleView } from "@/components/PurpleView";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { Image } from "expo-image";
 import { Link } from "expo-router";
+import React from "react";
 import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -15,19 +16,24 @@ export default function AuthScreen() {
         alignItems: "center",
       }}
     >
-      <Text>Let's Get Started</Text>
+      <Text style={{ marginTop: "20%", fontWeight: "bold", color: "#7C7A87" }}>
+        Let's Get Started
+      </Text>
       <Image
         source={require("@/assets/images/auth-home.png")}
         contentFit="contain"
-        style={{ width: 289, height: 253 }}
+        style={{ width: 289, height: 253, marginVertical: 20 }}
       />
-      <View style={{ marginTop: 24 }}>
+      {/* <View style={{ marginTop: 24 }}> */}
+      <>
+        <View style={{ marginTop: 24 }}></View>
         <AuthButton name={"Google"} icon={<Ionicons name="logo-google" />} />
         <AuthButton
           name={"Facebook"}
           icon={<MaterialIcons name="facebook" />}
         />
-      </View>
+      </>
+      {/* </View> */}
       <View
         style={{
           marginTop: 135,
@@ -37,7 +43,7 @@ export default function AuthScreen() {
           width: "50%",
         }}
       >
-        <AuthLink title={"Sign Up"} href={"/"} />
+        <AuthLink title={"Sign Up"} href={"/auth/signup"} />
         <AuthLink title={"Login"} href={"/auth/login"} />
       </View>
     </SafeAreaView>

@@ -19,6 +19,7 @@ export default function AuthButton({ name, icon }: AuthButtonProps) {
         borderWidth: 1,
         marginBottom: 16,
         padding: 8,
+        width: "80%",
       }}
     >
       {icon}

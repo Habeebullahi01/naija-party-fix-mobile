@@ -10,7 +10,7 @@ export default function AuthLink(props: AuthLinkProps) {
     <Link href={props.href} asChild>
       <Pressable
         style={{
-          backgroundColor: "#D14D57",
+          backgroundColor: "#c1121f",
           padding: 4,
           borderRadius: 20,
           //   marginTop: 135,
