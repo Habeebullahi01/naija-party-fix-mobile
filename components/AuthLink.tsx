@@ -1,11 +1,18 @@
 import { Link, type LinkProps } from "expo-router";
-import { Pressable, Text } from "react-native";
+import { DimensionValue, Pressable, Text } from "react-native";
 
 type AuthLinkProps = LinkProps & {
   title: String;
+  customWidth?: DimensionValue;
 };
 
 export default function AuthLink(props: AuthLinkProps) {
+  let w: DimensionValue;
+  if (props.customWidth) {
+    w = props.customWidth;
+  } else {
+    w = 50;
+  }
   return (
     <Link href={props.href} asChild>
       <Pressable
@@ -14,18 +21,18 @@ export default function AuthLink(props: AuthLinkProps) {
           padding: 4,
           borderRadius: 20,
           //   marginTop: 135,
-          width: 50,
+          width: w,
         }}
       >
         <Text
           style={{
             textAlign: "center",
             color: "#ffffff",
-            fontWeight: "bold",
+            // fontWeight: "bold",
             fontSize: 10,
           }}
         >
-          {props.title}
+          {props.title.toLocaleUpperCase()}
         </Text>
       </Pressable>
     </Link>

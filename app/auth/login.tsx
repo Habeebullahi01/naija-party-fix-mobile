@@ -11,9 +11,10 @@ export default function Login() {
           marginBottom: 20,
           fontWeight: "500",
           color: "#7C7A87",
+          fontSize: 18,
         }}
       >
-        Your dream event begins here
+        Your Dream Event Begins Here!!!
       </Text>
       <TextInput
         placeholder="Email"
@@ -21,7 +22,7 @@ export default function Login() {
           backgroundColor: "#D9D9D9",
           width: "80%",
           height: 45,
-          padding: 4,
+          paddingHorizontal: 8,
           marginVertical: 20,
         }}
         inputMode="email"
@@ -33,10 +34,11 @@ export default function Login() {
           backgroundColor: "#D9D9D9",
           width: "80%",
           height: 45,
-          padding: 4,
+          paddingHorizontal: 8,
           marginVertical: 20,
         }}
-        inputMode="email"
+        inputMode="text"
+        secureTextEntry={true}
       />
       <AuthLink href={"/"} title={"Login"} />
       <Text>
