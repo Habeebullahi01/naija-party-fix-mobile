@@ -153,7 +153,7 @@ export default function Signup() {
         </Text>
       </View>
 
-      <AuthLink href={"/"} title={"Create Account"} customWidth={"100%"} />
+      <AuthLink href={"/home"} title={"Create Account"} customWidth={"100%"} />
       <Text style={{ marginHorizontal: "auto" }}>
         Already have an account?{" "}
         <Link href={"/auth/login"} asChild>

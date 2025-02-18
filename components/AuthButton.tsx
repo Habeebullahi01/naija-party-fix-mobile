@@ -23,7 +23,7 @@ export default function AuthButton({ name, icon }: AuthButtonProps) {
       }}
     >
       {icon}
-      <Text style={{ color: "#7C7A87" }}>Connect with {name}</Text>;
+      <Text style={{ color: "#7C7A87" }}>Connect with {name}</Text>
     </View>
   );
 }

@@ -40,7 +40,7 @@ export default function Login() {
         inputMode="text"
         secureTextEntry={true}
       />
-      <AuthLink href={"/"} title={"Login"} />
+      <AuthLink href={"/home"} title={"Login"} />
       <Text>
         Don't have an account?{" "}
         <Link href={"/auth/signup"} asChild>
