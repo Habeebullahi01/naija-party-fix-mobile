@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "name": "The Place",
+      "description": "Serving the best local and continental dishes at the best prices in the market.",
+      "category": ["catering"],
+      "rating": 4,
+      "image": "#"
+    },
+    {
+      "name": "Dropies",
+      "description": "Unbeatable fast food service.",
+      "category": ["catering"],
+      "rating": 3,
+      "image": "#"
+    },
+    {
+      "name": "D Decorators",
+      "description": "Unbeatable decoration service.",
+      "category": ["decoration"],
+      "rating": 3,
+      "image": "#"
+    },
+    {
+      "name": "D Decorators 4",
+      "description": "Unbeatable decoration service.",
+      "category": ["decoration"],
+      "rating": 3,
+      "image": "#"
+    },
+    {
+      "name": "D Decorators 3",
+      "description": "Unbeatable decoration service.",
+      "category": ["decoration"],
+      "rating": 3,
+      "image": "#"
+    },
+    {
+      "name": "Dropies",
+      "description": "Unbeatable fast food service.",
+      "category": ["catering"],
+      "rating": 3,
+      "image": "#"
+    },
+    {
+      "name": "Dropies",
+      "description": "Unbeatable fast food service.",
+      "category": ["catering"],
+      "rating": 3,
+      "image": "#"
+    }
+  ]
+}
